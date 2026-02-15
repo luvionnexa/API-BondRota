@@ -1,0 +1,46 @@
+Registro das ideias do projeto:
+
+- Função de Calcular Melhor Rota
+
+    - Função Escolher Motorista
+        -Ainda não sabemos quais os criterios para esc
+
+    - Função Escolher Veiculo ideal
+        . Vai Escolher o Veiculo com Base em Algumas Variaveis, como: 
+            -Distancia total da rota(viagens longas escolheram um onibus melhor/executivo)
+            -Quantidade de alunos
+            -Turno, turno de manha terão prioridade para ficar com o onibus executivo, considerando que é mais quente 
+
+    - Função Escolher Melhor Trajeto
+        -Vai ser com base na distancia entre os pontos, vamos utilizar um algoritmo não guloso para escolher as melhores rotas
+        -Os pontos mais pertos, serão da mesma rota
+        -Vamos usar o algoritmo de held karp(problema do caixeiro viajante não guloso)
+
+- Criptografia de senha
+    - Usando biblioteca bycrpt (criação de hashes)
+
+- Armazenamento da URL das fotos
+    - Salvar em Armazenamento em Nuvem (Firebase, Render, AWS S3, Google CloudStorage)
+    - O Fluxo Técnico (Passo a Passo)
+        Independentemente da opção, o fluxo no seu código Python será este:
+        - Recebimento: O usuário envia a imagem via formulário (Multipart/Form-Data) para sua API.
+        - Renomeação (Segurança): Nunca salve com o nome original (ex: "foto.jpg"). Gere um nome único (UUID) para evitar que uma imagem sobrescreva outra.
+        - Upload: Seu código Python envia o arquivo para o Storage (Nuvem ou Pasta).
+        - Obtenção da URL: O Storage confirma que salvou e te dá o caminho.
+        - Persistência: Você pega esse caminho (URL) e faz o INSERT no seu banco de dados na coluna VARCHAR(2048).
+
+- Funções que calculam as quantidades...
+    - Baseado em métodos GET+count com a as routes da API
+    - Considerano o dia atual...
+
+- Algoritmo de organização de reservas
+    - Necessário biblioteca ou fonte externa para gerenciar os dias...
+    ~ Biblioteca datetime
+
+- Acessar a API com proxy
+
+
+- Ordem para os próximos passos:
+> Criptografia das senhas
+> Funções que calculam as quantidades
+> Organização das reservas...?

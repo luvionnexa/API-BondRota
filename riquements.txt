@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-dotenv
+argon2-cffi
+psycopg2-binary
+ntplib = 0.4.0
