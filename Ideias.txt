@@ -38,7 +38,7 @@ Registro das ideias do projeto:
     ~ Biblioteca datetime
 
 - Acessar a API com proxy
-
+    - Por último
 
 - Ordem para os próximos passos:
 > Criptografia das senhas
