@@ -17,7 +17,7 @@ Registro das ideias do projeto:
         -Vamos usar o algoritmo de held karp(problema do caixeiro viajante não guloso)
 
 - Criptografia de senha
-    - Usando biblioteca bycrpt (criação de hashes)
+    - Argon 2
 
 - Armazenamento da URL das fotos
     - Salvar em Armazenamento em Nuvem (Firebase, Render, AWS S3, Google CloudStorage)
