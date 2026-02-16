@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from database import engine
+from app.database import engine
 import models 
 
 from routers import clientes, motoristas, veiculos, pontos, rotas_internas, administradores, horarios_fixos_cliente, reservas

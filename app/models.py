@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, VARCHAR, Boolean, ForeignKey, Date, CheckConstraint, Numeric
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import relationship, validates
-from database import Base # Certifique-se que o import do Base está correto no seu projeto
+from app.database import Base # Certifique-se que o import do Base está correto no seu projeto
 from algoritmos.time import validar_data_nao_futura
 
 # ---Modelo das tabelas---
