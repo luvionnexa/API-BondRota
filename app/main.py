@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine
-import models 
+from app import models 
 
-from routers import clientes, motoristas, veiculos, pontos, rotas_internas, administradores, horarios_fixos_cliente, reservas
+from app.routers import clientes, motoristas, veiculos, pontos, rotas_internas, administradores, horarios_fixos_cliente, reservas
 
 
 models.Base.metadata.create_all(bind=engine)
