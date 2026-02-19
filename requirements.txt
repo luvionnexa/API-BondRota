@@ -1,8 +1,7 @@
-fastapi
-uvicorn
-sqlalchemy
-pydantic
-python-dotenv
-argon2-cffi
-psycopg2-binary
-ntplib == 0.4.0
+fastapi==0.121.2
+uvicorn==0.38.0
+sqlalchemy==2.0.44
+pydantic==2.12.4
+python-dotenv==1.2.1
+argon2-cffi==25.1.0
+ntplib==0.4.0

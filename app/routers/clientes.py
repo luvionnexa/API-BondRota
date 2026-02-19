@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List
 from datetime import timedelta
 from app.database import get_db
-import models, schemas
-from algoritmos.criptografia import gerar_hash
-from algoritmos.time import TimeService
+from app import models, schemas
+from app.algoritmos.criptografia import gerar_hash
+from app.algoritmos.relogio import TimeService
 
 router = APIRouter(
     prefix="/clientes",
