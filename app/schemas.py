@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from datetime import date
 from typing import Optional, List
 
@@ -92,7 +92,7 @@ class ClienteBase(BaseModel):
     curso: Optional[str] = "nenhum"
     telefone: Optional[str] = None
     data_de_nascimento: Optional[date] = None
-    senha: str
+    senha: str = Field(exclude = True)
     turno: str
     foto: Optional[str] = None
     conta: str
@@ -127,7 +127,7 @@ class ClienteResponse(ClienteBase):
 # --- Schemas Motorista ---
 class MotoristaBase(BaseModel):
     nome: str
-    senha: str
+    senha: str = Field(exclude=True)
     telefone: Optional[str] = None
     data_de_nascimento: Optional[date] = None
     turno: str
