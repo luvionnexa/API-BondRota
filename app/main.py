@@ -3,8 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine
 from app import models 
 
-from app.routers import clientes, motoristas, veiculos, pontos, rotas_internas, administradores, horarios_fixos_cliente, reservas
-
+from app.routers import (
+                        clientes, motoristas, veiculos, pontos, 
+                         rotas_internas, administradores, horarios_fixos_cliente, reservas
+                        )
+#quantidades
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -26,6 +29,7 @@ app.include_router(rotas_internas.router)
 app.include_router(administradores.router)
 app.include_router(horarios_fixos_cliente.router)
 app.include_router(reservas.router)
+#app.include_router(quantidades.router)
 
 @app.get("/")
 def root():
